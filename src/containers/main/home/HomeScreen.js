@@ -9,7 +9,7 @@ import StoryContainer from './story/StoryContainer';
 
 const HomeScreen = props => {
   const post = {
-    username: 'ozaferayan',
+    username: 'elesar21',
     placeName: 'İstanbul, Türkiye',
     imgUrl: 'https://picsum.photos/512',
     likeCount: 103,
@@ -20,7 +20,7 @@ const HomeScreen = props => {
   };
   const stories = [
     {
-      key: 'ozaferayan',
+      key: 'elesar21',
       isStoryInsertable: true,
       hasStory: false,
       src:

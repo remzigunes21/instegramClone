@@ -7,14 +7,15 @@ import images from 'res/images';
 import colors from 'res/colors';
 import palette from 'res/palette';
 import MainScreen from './MainScreen';
-import OtherScreen from './OtherScreen';
+import ActivityNavigator from './activity/ActivityNavigator';
 import HomeNavigator from './home/HomeNavigator';
+import SearchNavigator from './search/SearchNavigator';
 
 const routeConfig = {
   Home: HomeNavigator,
-  Search: createStackNavigator({Search: OtherScreen}),
+  Search: createStackNavigator({Search: SearchNavigator}),
   AddPost: createStackNavigator({AddPost: MainScreen}),
-  Activity: createStackNavigator({Activity: OtherScreen}),
+  Activity: createStackNavigator({Activity: ActivityNavigator}),
   Profile: createStackNavigator({Profile: MainScreen}),
 };
 
