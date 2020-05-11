@@ -10,13 +10,15 @@ import MainScreen from './MainScreen';
 import ActivityNavigator from './activity/ActivityNavigator';
 import HomeNavigator from './home/HomeNavigator';
 import SearchNavigator from './search/SearchNavigator';
+import AddPostNavigator from './addPost/AddPostNavigator';
+import ProfileNavigator from './profile/ProfileNavigator';
 
 const routeConfig = {
   Home: HomeNavigator,
   Search: createStackNavigator({Search: SearchNavigator}),
-  AddPost: createStackNavigator({AddPost: MainScreen}),
+  AddPost: createStackNavigator({AddPost: AddPostNavigator}),
   Activity: createStackNavigator({Activity: ActivityNavigator}),
-  Profile: createStackNavigator({Profile: MainScreen}),
+  Profile: createStackNavigator({Profile: ProfileNavigator}),
 };
 
 const navigatorConfig = {
